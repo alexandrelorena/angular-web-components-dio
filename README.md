@@ -4,7 +4,7 @@
 
 ### 📚 Introdução a Angular
 
-Estudos sobre Angular e Web Components, parte do Bootcam [Deal - Spring Boot e Angular (17+)](https://web.dio.me/track/coding-the-future-spring-boot-angular-17) da DIO. 
+Estudos sobre Angular e Web Components, parte do Bootcamp [Deal - Spring Boot e Angular (17+)](https://web.dio.me/track/coding-the-future-spring-boot-angular-17) da DIO. 
 
 ### 🎯 Tópicos
 - Trabalhando com Web Components no Front-end
