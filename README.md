@@ -6,6 +6,8 @@
 
 Estudos sobre Angular e Web Components, parte do Bootcamp [Deal - Spring Boot e Angular (17+)](https://web.dio.me/track/coding-the-future-spring-boot-angular-17) da DIO. 
 
+Criando 'web components' para fins de encapsulamento e reutilização de código sem o uso de frameworks.
+
 ### 🎯 Tópicos
 - Trabalhando com Web Components no Front-end
 - TypeScript para Angular
