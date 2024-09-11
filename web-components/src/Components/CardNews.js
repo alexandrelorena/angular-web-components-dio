@@ -8,51 +8,63 @@ class CardNews extends HTMLElement{
     }
 
     build(){
-        const componentRoot = document.createElement("div");  // Cria o contêiner do card
-        componentRoot.setAttribute("class", "card");  // Define a classe do contêiner
-
-        const cardLeft = document.createElement("div");  // Cria o contêiner esquerdo
-        cardLeft.setAttribute("class", "card_left");  // Define a classe do lado esquerdo
-        
-        const autor = document.createElement("span");  // Cria o elemento para o autor
-        autor.textContent = "By " + (this.getAttribute("autor") || "Anonymous");  // Define o autor
-
-        const linkTitle = document.createElement("a");  // Cria o link do título
-        linkTitle.textContent = this.getAttribute("title");  // Define o texto do título
-        linkTitle.href = this.getAttribute("link-url");  // Define a URL do título
-
-        const newsContent = document.createElement("p");  // Cria o parágrafo de conteúdo
-        newsContent.textContent = this.getAttribute("content");  // Define o texto do conteúdo
-
-        cardLeft.appendChild(autor);  // Adiciona o autor ao card esquerdo
-        cardLeft.appendChild(linkTitle);  // Adiciona o título ao card esquerdo
-        cardLeft.appendChild(newsContent);  // Adiciona o conteúdo ao card esquerdo
-
-        const cardRight = document.createElement("div");  // Cria o contêiner direito
-        cardRight.setAttribute("class", "card_right");  // Define a classe do lado direito
-
-        const newsImage = document.createElement("img");  // Cria o elemento de imagem
-        newsImage.src = this.getAttribute("photo") || "assets/foto-default.jpg";  // Define o src da imagem
-        newsImage.alt = "Foto da notícia";  // Define o texto alternativo da imagem
-        cardRight.appendChild(newsImage);  // Adiciona a imagem ao card direito
-
-        componentRoot.appendChild(cardLeft);  // Adiciona o lado esquerdo ao card
-        componentRoot.appendChild(cardRight);  // Adiciona o lado direito ao card
-
-        return componentRoot;  // Retorna o card completo
+        const componentRoot = document.createElement("div");
+        componentRoot.setAttribute("class", "card");
+    
+        const cardLeft = document.createElement("div");
+        cardLeft.setAttribute("class", "card_left");
+    
+        // Criar o elemento de imagem do usuário
+        const userImage = document.createElement("img");
+        userImage.src = this.getAttribute("user") || "assets/user-default.jpeg";
+        userImage.alt = "Foto do usuário";  // Adiciona um texto alternativo
+        userImage.style.width = "50px";  // Define a largura da imagem (ajuste conforme necessário)
+        userImage.style.height = "50px";  // Define a altura da imagem
+    
+        const autor = document.createElement("span");
+        autor.textContent = "By " + (this.getAttribute("autor") || "Anonymous");
+    
+        const linkTitle = document.createElement("a");
+        linkTitle.textContent = this.getAttribute("title"); 
+        linkTitle.href = this.getAttribute("link-url");
+    
+        const newsContent = document.createElement("p");
+        newsContent.textContent = this.getAttribute("content");
+    
+        // Adiciona a imagem do usuário antes do autor
+        cardLeft.appendChild(userImage);
+        cardLeft.appendChild(autor);
+        cardLeft.appendChild(linkTitle);
+        cardLeft.appendChild(newsContent);
+    
+        const cardRight = document.createElement("div");
+        cardRight.setAttribute("class", "card_right");
+    
+        const newsImage = document.createElement("img");
+        newsImage.src = this.getAttribute("photo") || "assets/foto-default.jpg";
+        newsImage.alt = "Foto da notícia";
+        cardRight.appendChild(newsImage);
+    
+        componentRoot.appendChild(cardLeft);
+        componentRoot.appendChild(cardRight);
+    
+        return componentRoot;
     }
+    
 
     styles(){
         const style = document.createElement("style");  // Cria um elemento de estilo
         style.textContent = `
         .card{
-            width: 80%;  /* Define a largura do card */
-            /* border: 1px solid gray; */  /* borda desativada */
+            width: 50%;  /* Define a largura do card */
+            /* border: 1px solid gray; */  /* Borda desativada */
             box-shadow: 2px 7px 12px 0px #000000;  /* Adiciona sombra ao card */
-            display:flex;  /* Define layout flexível */
+            display: flex;  /* Define layout flexível */
             flex-direction: row;  /* Alinha itens em linha */
             justify-content: space-between;  /* Espaço entre os itens */
+            margin: 0 auto;  /* Centraliza o card horizontalmente */
         }
+
     
         .card_left{
             display:flex;  /* Define layout flexível no lado esquerdo */
