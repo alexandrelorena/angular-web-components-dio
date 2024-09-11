@@ -76,6 +76,15 @@ class CardNews extends HTMLElement{
         .card_left > p {
             color:gray;  /* Cor cinza para o conteúdo da notícia */
         }
+
+        .card_right img {
+            width: 300px;  /* Define a largura da imagem */
+            height: 150px;  /* Mantém a proporção da imagem */
+            border-radius: 10px;  /* Arredonda os cantos da imagem */
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);  /* Adiciona sombra à imagem */
+            margin-right: 5px;  /* Espaçamento à esquerda da imagem */
+            margin-top: 5px;  /* Espaçamento superior da imagem */
+        }
         `;
     
         return style;  // Retorna o elemento de estilo
