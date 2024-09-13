@@ -31,3 +31,26 @@ function executaQuery(): void{};
 
 //any
 let retornoView: any = false; //pode retornar qualquer coisa
+
+//objeto - sem previsibilidade
+let produto: object = {
+    name: "Alexandre",
+    cidade: "SP",
+    idade: 30,      
+};
+
+//objeto tipado - com previsibilidade
+type ProdutoLoja = {
+    nome: string;
+    preco: number;
+    unidades: number;
+};
+let meuProduto: ProdutoLoja = {
+    nome: "tênis",
+    preco: 89.99,
+    unidades: 5,
+}
+
+// ############### Date ###############
+let aniversario: Date = new Date("1974-08-03");
+console.log(aniversario.toString());
