@@ -79,3 +79,95 @@ let meuProduto = {
     unidades: 5,
 };
 console.log(meuProduto);
+console.log("\n############### Interfaces ###############\n");
+const bot1 = {
+    id: 1,
+    name: "megaman",
+};
+;
+const bot2 = {
+    id: 2,
+    name: "megaman2",
+    sayHello: function () {
+        throw new Error("Function not implemented.");
+    }
+};
+const bot3 = {
+    id: 3,
+    name: "megaman3",
+    sayHello: function () {
+        throw new Error("Function not implemented.");
+    }
+};
+console.log(bot2.name = "Tesla");
+console.log(bot1);
+console.log(bot2);
+console.log("\nCom 'readyonly', não será possível o usuário alterar o objeto\n");
+console.log("Usar 'interface' quando for trabalhar com classes:\n");
+class Pessoa {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    sayHello() {
+        return `Hello, I'm ${this.name}!`;
+    }
+}
+const p = new Pessoa(1, "Ale");
+console.log(p.sayHello());
+console.log("\n############### Classes ###############\n");
+class Character {
+    constructor(name, stregth, skill) {
+        this.name = name;
+        this.stregth = stregth;
+        this.skill = skill;
+    }
+    attack() {
+        console.log(`Atack with ${this.stregth} points`);
+    }
+}
+const p1 = new Character("Fulano", 10, 98);
+p1.attack();
+console.log("\n############### Modificadores de acesso ###############\n");
+/*
+data modifiers
+    public
+    private
+    protected
+*/
+console.log("\nPrivate: só é acessível dentro da classe.\n");
+console.log("Public: acessível fora da classe.\n");
+console.log("Protected: acessível dentro da classe e de classes que a herdam (subclasses).\n");
+console.log("Public: acessível fora da classe.\n");
+console.log("Funcionam para métodos também.\n");
+class Personagem {
+    constructor(name, stregth, skill) {
+        this.name = name;
+        this.stregth = stregth;
+        this.skill = skill;
+    }
+    attack() {
+        console.log(`Atack with ${this.stregth} points`);
+    }
+}
+const p2 = new Personagem('SirX', 15, 92);
+p2.attack();
+console.log("\n############### Subclasses ###############\n");
+class Magician extends Character {
+    constructor(name, stregth, skill, magicPoints) {
+        super(name, stregth, skill);
+        this.magicPoints = magicPoints;
+    }
+}
+const p3 = new Character("Ryu", 10, 75);
+const p4 = new Magician("Mago", 9, 69, 100);
+console.log(p3, "\n", p4, ">> extendes de Character e adiciona atributo 'magicPoints'.");
+console.log("\n############### Generics ###############\n");
+function concatArray(...itens) {
+    return new Array().concat(...itens);
+}
+const numArray = concatArray([1, 5], [3]);
+const stgArray = concatArray(["Alexandre", "goku"], ["vegeta"]);
+numArray.push("saitama");
+console.log(numArray);
+console.log(stgArray);
