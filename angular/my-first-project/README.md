@@ -1,7 +1,6 @@
 # MyFirstProject
 
 Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
-
 Destina-se aos estudos do Framework Angular 17+.
 
 ---
