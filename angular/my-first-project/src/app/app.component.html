@@ -1,3 +1,89 @@
-<hello name="{{ name }}"></hello>"DFGGFSGFGSFDGSFSFDG</p>
+<hello [name]="obj['name']"></hello>
 <menu-component></menu-component>
+
+
+<p>Curso de Angular</p>
 <h1>Olá Mundão</h1>
+
+<!-- data binding = associação de dados -->
+
+<!-- interpolação -->
+<app-button label="notícia"></app-button><!-- 'ouvindo' a variável-->
+<app-button label="{{ buttonLabel }}"></app-button><!-- 'ouvindo' a variável-->
+
+<!-- property binding -->
+<app-button [label]="buttonSecond"></app-button><!-- passando o texto direto -->
+<app-button [label]="'CARRINHO'"></app-button><!-- passando o texto direto -->
+
+<!-- event binding - vêm do html para o typescript
+
+- button.component.html
+<div>
+	<button (click)="getAlert()">{{ label }}</button>
+</div>
+
+- button.component.ts
+	getAlert() {
+		alert(this.label);
+	}
+
+----------------------------------------------------
+
+parâmetro - button.component.html
+
+<div>
+	<button (click)="getAlert(14)">{{ label }}</button>
+</div>
+
+parâmetro - button.component.ts
+		getAlert(num: number) {
+		alert(num);
+	}
+
+----------------------------------------------------
+
+-->
+
+<!--  two way data binding -->
+
+<app-entry-data></app-entry-data>
+
+<!--
+
+- entry-data.component.html
+<input type="text" [value]="placeholder" (input)="placeholder = $any($event.target).value">
+
+<p>{{ placeholder }}</p>
+
+
+- entry-data.component.ts
+export class EntryDataComponent {
+	placeholder: string = 'email';
+}
+
+----------------------------------------------------
+
+Diretiva ngModel
+
+- entry-data.component.html
+<input type="text" [(ngModel)]=" placepass" />
+
+<p>{{ placepass }}</p>
+
+----------------------------------------------------
+
+Style binding
+
+- ts
+export class EntryDataComponent {
+	placeholder: string = 'email';
+	placepass: string = 'senha';
+	color: string = 'red'; // style binding
+}
+
+- html
+<p [style.color]="color">{{ placepass }}</p>
+
+----------------------------------------------------
+
+-->
