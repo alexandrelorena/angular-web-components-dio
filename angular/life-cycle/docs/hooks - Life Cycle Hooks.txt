@@ -1,0 +1,58 @@
+ Aqui está a ordem correta dos 8 hooks e o momento em que cada um deles é executado:
+
+    ngOnChanges:
+        Chamado primeiro, antes do ngOnInit, e é chamado sempre que qualquer uma das propriedades vinculadas a dados de entrada (@Input) mudar. Isso pode ocorrer várias vezes durante o ciclo de vida do componente.
+
+    ngOnInit:
+        Chamado uma vez logo após o primeiro ngOnChanges e é ideal para inicializações que dependem das propriedades de entrada, como a obtenção de dados de um serviço.
+
+    ngDoCheck:
+        Chamado a cada ciclo de detecção de mudanças. Pode ocorrer várias vezes, permitindo uma verificação personalizada do estado do componente.
+
+    ngAfterContentInit:
+        Chamado uma única vez após o Angular ter processado todo o conteúdo de projeção (conteúdo transcluído via <ng-content>).
+
+    ngAfterContentChecked:
+        Chamado após cada verificação do conteúdo projetado. Isso acontece após ngAfterContentInit e após cada mudança subsequente.
+
+    ngAfterViewInit:
+        Chamado uma vez depois que as visualizações do componente e de seus componentes filhos são inicializadas. É útil para inicializar interações com visualizações do DOM ou componentes filhos.
+
+    ngAfterViewChecked:
+        Chamado após cada verificação das visualizações do componente e de seus componentes filhos. Isso acontece após ngAfterViewInit e após cada mudança subsequente.
+
+    ngOnDestroy:
+        Chamado imediatamente antes do Angular destruir o componente ou diretiva. É útil para limpar recursos e prevenir vazamentos de memória, como remover assinaturas de observáveis e event listeners.
+
+Ordem de execução dos hooks em um ciclo de vida típico:
+
+    ngOnChanges (quando um @Input muda)
+    ngOnInit
+
+    ngDoCheck
+      ngDoCheck: Chamado durante cada ciclo de detecção de mudanças para permitir uma lógica de verificação personalizada.
+                É uma alternativa ao ngOnChanges quando você precisa de mais controle sobre a detecção de mudanças.
+
+      ngAfterContentChecked: Chamado após cada verificação do conteúdo projetado no componente, ou seja, após o Angular processar o
+                            conteúdo inserido por meio do <ng-content> no componente.
+
+      ngAfterViewChecked: Chamado após cada verificação das visualizações do componente e dos seus componentes filhos, garantindo que
+                          todas as mudanças na árvore de componentes e no DOM foram verificadas.
+
+    ngAfterContentInit
+    ngAfterContentChecked
+    ngAfterViewInit
+    ngAfterViewChecked
+
+Durante mudanças subsequentes:
+
+    ngOnChanges (se houver mudanças em @Input)
+    ngDoCheck
+    ngAfterContentChecked
+    ngAfterViewChecked
+
+Antes de destruir o componente:
+
+    ngOnDestroy
+
+Portanto, a lista anterior está correta em termos de quais são os hooks do ciclo de vida, mas é sempre importante lembrar que ngOnChanges pode ser chamado várias vezes e que alguns hooks ocorrem apenas uma vez (como ngOnInit, ngAfterContentInit e ngAfterViewInit).
