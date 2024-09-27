@@ -1,0 +1,12 @@
+<app-comp-atributos>
+  <h2>ola</h2>
+  <p>Eu vim de fora</p>
+</app-comp-atributos>
+
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
+<!-- A diretiva 'ngIf' serve para mostrar (true) ou não (false) um elemento ou um componente. -->
+<ng-template #anotherBlock>
+  <p> Ola sou um bloco secreto! Apareço quando o 'isAliveCard' for False</p>
+</ng-template>
+
+<router-outlet></router-outlet>
