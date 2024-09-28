@@ -1,6 +1,6 @@
 # Deal - Spring Boot e Angular (17+)
 
-### 📚 Construindo Aplicações Angular
+### 📚 Construindo um Blog no Angular
 
 Este estudo faz parte do Bootcamp [Deal - Spring Boot e Angular (17+)](https://web.dio.me/track/coding-the-future-spring-boot-angular-17) da DIO.
 
@@ -9,11 +9,6 @@ Este estudo faz parte do Bootcamp [Deal - Spring Boot e Angular (17+)](https://w
 - Single Page Application com Angular
 - Módulos Angular
 - Criando um Blog com Angular
-- Trabalhando com Rotas no Angular
-- Trabalhando com Services no Angular
-- Recriando a Interface da PlayStation Store com Angular
-- Trabalhando com Pipes no Angular
-- Criando um clone do BuzzFeed com Angular
 
 ### 🛠️ Ferramentas
 
