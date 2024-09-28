@@ -10,6 +10,7 @@
 .small-card__photo > img {
   width: 200px;
   min-width: 200px;
+  min-height: 150px;
   margin-right: 20px;
 }
 .small-card__title {
