@@ -6,9 +6,17 @@ Este estudo faz parte do Bootcamp [Deal - Spring Boot e Angular (17+)](https://w
 
 ### 🎯 Tópicos
 
-- Single Page Application com Angular
-- Módulos Angular
-- Criando um Blog com Angular
+- Enxergando os componentes em um Layout
+- Criando a base dos components
+- Menu Title
+- Criando a estrutura do big card
+- Desenhando Small-Cards
+- Criando o Componente do Menu
+- Agregando múltiplos CSS para um component
+- Desacoplando os componentes da parte visual
+- Criando outras páginas
+- Pegando os dados dinamicamente
+- Deixando a content Page Dinâmica
 
 ### 🛠️ Ferramentas
 
