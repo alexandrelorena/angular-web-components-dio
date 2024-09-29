@@ -1,0 +1,10 @@
+.menu > ul > li > a {
+  font-size: large;
+  text-decoration: none;
+}
+
+.activated {
+  color: red;
+  font-size: large;
+  text-decoration: none;
+}
