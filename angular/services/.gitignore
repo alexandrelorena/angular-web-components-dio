@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+
+../projetos/angular-blog/.gitignore
+../../.gitignore
+../life-cycle/.gitignore
+package-lock.json
+../../package-lock.json
