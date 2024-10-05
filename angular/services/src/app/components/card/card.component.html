@@ -1,7 +1,7 @@
 <div class="card">
 
   <div class="card__title">
-    <h3> CHAMANDER </h3>
+    <h3> {{ name }} </h3>
   </div>
 
   <div class="card__body">
@@ -9,9 +9,9 @@
   </div>
 
   <div class="card__stats">
-    <span class="card__stats_type">FIRE</span>
-    <span class="card__stats_type">FIRE</span>
-    <span class="card__stats_type">FIRE</span>
+    <span *ngFor="let type of attributesTypes">
+      {{ type }}
+    </span>
   </div>
 
 </div>

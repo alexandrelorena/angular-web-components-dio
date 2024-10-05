@@ -33,7 +33,14 @@
 }
 
 .card__stats > span {
-  color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  width: 45px;
+
+  display: flex;
+  justify-content: center;
+
   background-color: coral;
   border-radius: 5px;
   padding: 2px;
