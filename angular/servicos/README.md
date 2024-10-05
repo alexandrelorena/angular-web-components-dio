@@ -2,7 +2,7 @@
 
 ### 📚 Trabalhando com Services no Angular
 
-Estudos sobre Services no Angular, parte do Bootcamp [Deal - Spring Boot e Angular (17+)](https://web.dio.me/track/coding-the-future-spring-boot-angular-17) da DIO.
+Consumimos uma API para estudos de Services no Angular, parte do Bootcamp [Deal - Spring Boot e Angular (17+)](https://web.dio.me/track/coding-the-future-spring-boot-angular-17) da DIO.
 
 ### 🎯 Tópicos
 
@@ -15,15 +15,15 @@ Estudos sobre Services no Angular, parte do Bootcamp [Deal - Spring Boot e Angul
 - TypeScrypt
 - Html
 - Css
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-</head>
-<body>
+- Api (https://pokeapi.co/)
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <body>
 
 <img src="https://i.imgur.com/h1q7oo1.jpg" width="785" height="5">
 
