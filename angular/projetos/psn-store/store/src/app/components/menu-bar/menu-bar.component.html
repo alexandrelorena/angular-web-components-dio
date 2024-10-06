@@ -1,0 +1,13 @@
+<div class="menu-bar__container">
+	<div class="menu-bar__logo">
+		<img src="assets/ps-logo.png" alt="playstation logo" width="140px" height="32px">
+	</div>
+	<div class="menu-bar__item">
+		<ul>
+			<li *ngFor="let link of menuLinks">
+				<a [href]="link.url" target="_blank">{{ link.label }}</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<p>menu-bar works!</p>

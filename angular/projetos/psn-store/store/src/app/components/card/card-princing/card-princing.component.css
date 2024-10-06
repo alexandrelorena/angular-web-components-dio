@@ -1,0 +1,34 @@
+.card-princing__container {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	height: 70px;
+	background-color: #0d0d0de3;
+	padding: 10px;
+	color: antiquewhite;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card-princing__title {
+	margin-bottom: 3px;
+}
+
+.card-princing__value {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-princing__value__console {
+	display: flex;
+}
+
+.card-princing__value__console > span {
+	font-weight: bolder;
+	color: aqua;
+	margin-right: 10px;
+}
