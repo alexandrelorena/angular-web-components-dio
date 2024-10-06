@@ -1,0 +1,23 @@
+.card-div {
+  display: flex; /* Usar flexbox para alinhar os itens */
+  flex-direction: column; /* Colocar itens em coluna */
+  align-items: center; /* Centralizar horizontalmente */
+  justify-content: center; /* Centralizar verticalmente */
+  /* height: 94vh; Ocupa toda a altura da janela */
+  background-color: #fff; /* Cor de fundo suave */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+h1 {
+  font-size: 2.5rem; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Margem inferior */
+  /* border: 1px solid #ff0000; */
+}
+
+app-card {
+  margin: 10px 0; /* Margem superior e inferior */
+}

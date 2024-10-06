@@ -1,7 +1,7 @@
 .card {
   border: 1px solid black;
-  width: 250px;
-  height: 350px;
+  width: 350px;
+  height: 450px;
 
   display: flex;
   flex-direction: column;
@@ -50,4 +50,7 @@
   border-radius: 5px;
   padding: 2px;
   margin-right: 4px;
+}
+.container__card > input {
+  width: 340px; /* Largura do campo de entrada */
 }
