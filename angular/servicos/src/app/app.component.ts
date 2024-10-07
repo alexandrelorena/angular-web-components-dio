@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <div class="card-div">
-      <h1>Aula de Services</h1>
+      <h1>Services Angular</h1>
       <app-card></app-card>
       <router-outlet></router-outlet>
     </div>

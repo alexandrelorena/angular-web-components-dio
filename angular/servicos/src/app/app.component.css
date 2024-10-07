@@ -4,7 +4,7 @@
   align-items: center; /* Centralizar horizontalmente */
   justify-content: center; /* Centralizar verticalmente */
   /* height: 94vh; Ocupa toda a altura da janela */
-  background-color: #fff; /* Cor de fundo suave */
+  background-color: white; /* Cor de fundo suave */
   padding: 20px; /* Espaçamento interno */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
   border-radius: 8px; /* Bordas arredondadas */

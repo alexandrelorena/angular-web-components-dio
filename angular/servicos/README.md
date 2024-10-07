@@ -4,10 +4,15 @@
 
 Consumimos uma API para estudos de Services no Angular, parte do Bootcamp [Deal - Spring Boot e Angular (17+)](https://web.dio.me/track/coding-the-future-spring-boot-angular-17) da DIO.
 
+<a href="https://youtu.be/uX4WLJFSOWA">
+  <img src="src/assets/poke-card.png" alt="languages graph"/>
+</a>
+
 ### 🎯 Tópicos
 
 - Introdução ao Services Angular
 - Services na Prática
+- Pipes
 
 ### 🛠️ Ferramentas
 

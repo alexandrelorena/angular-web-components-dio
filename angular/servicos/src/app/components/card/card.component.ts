@@ -24,7 +24,7 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getPokemon('pikachu');
+    this.getPokemon('charizard');
   }
 
   getPokemon(searchName: string) {

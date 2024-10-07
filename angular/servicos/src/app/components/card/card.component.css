@@ -13,16 +13,21 @@
   margin-right: auto;
 }
 
-.card__title > h3 {
+.card__title .type {
   color: white;
 }
 
+.card__title .name {
+  color: chocolate;
+}
+
 .card__body {
-  background-color: #616161;
+  background-color: darkslategrey;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   height: 70%;
+  border-radius: 10px;
 }
 
 .card__body > img {
@@ -31,15 +36,17 @@
 }
 
 .card__stats {
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 5px;
 }
 
 .card__stats > span {
   color: black;
   font-weight: bold;
+  padding: 20px;
   /* font-size: 14px;
   width: 45px; */
 
@@ -51,6 +58,12 @@
   padding: 2px;
   margin-right: 4px;
 }
+
+/* .card__stats__type {
+
+} */
 .container__card > input {
-  width: 340px; /* Largura do campo de entrada */
+  width: 344px; /* Largura do campo de entrada */
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
