@@ -1,9 +1,10 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { SobreComponent } from './components/sobre/sobre.component';
-import { ProdutosComponent } from './components/produtos/produtos.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProdutosComponent } from './components/produtos/produtos.component';
+import { SobreComponent } from './components/sobre/sobre.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -18,10 +19,15 @@ const routes: Routes = [
   {
     path: 'produtos',
     component: ProdutosComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '',
   },
 ];
 
