@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "guards": {
+    "guards-estudos": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/guards",
+            "outputPath": "dist/guards-estudos",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "guards:build:production"
+              "buildTarget": "guards-estudos:build:production"
             },
             "development": {
-              "buildTarget": "guards:build:development"
+              "buildTarget": "guards-estudos:build:development"
             }
           },
           "defaultConfiguration": "development"

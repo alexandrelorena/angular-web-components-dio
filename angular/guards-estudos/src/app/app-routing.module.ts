@@ -7,26 +7,26 @@ import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: HomeComponent,
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
-    path:'sobre',
-    component: SobreComponent
+    path: 'sobre',
+    component: SobreComponent,
   },
   {
-    path:'produtos',
-    component: ProdutosComponent
+    path: 'produtos',
+    component: ProdutosComponent,
   },
   {
-    path:'login',
-    component: LoginComponent
-  }
+    path: 'login',
+    component: LoginComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

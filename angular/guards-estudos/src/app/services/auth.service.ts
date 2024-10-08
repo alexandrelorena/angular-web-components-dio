@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
-  private loggedIn = false;  // Simulação de estado de autenticação
+  private loggedIn = false; // Simulação de estado de autenticação
 
   // Simula a verificação de login
   isAuthenticated(): boolean {
