@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignorar arquivos indesejados
+/life-cycle/.gitignore
+/projetos/angular-blog/.ideas/
+/projetos/angular-blog/.vscode/
+/projetos/angular-blog/package-lock.json
+/package-lock.json
