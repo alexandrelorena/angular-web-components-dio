@@ -1,55 +1,216 @@
 {
-  "title": "Você seria um heroi ou vilão ?",
+  "title": "Você sobreviveria a um apocalipse zumbi?",
   "questions": [
     {
       "id": 1,
-      "question": "Qual super poder você escolheria ?",
+      "question": "Você está em uma pequena cidade abandonada à procura de suprimentos. De repente, ouve barulhos de passos se aproximando rapidamente. O que você faz?",
       "options": [
-        { "id": 1, "name": "Raios-Lasers", "alias": "A" },
-        { "id": 2, "name": "Voar", "alias": "B" },
-        { "id": 3, "name": "Explodir coisas", "alias": "A" },
-        { "id": 4, "name": "Curar feridas", "alias": "B" },
-        { "id": 5, "name": "Soltar fogo pelas mãos", "alias": "A" }
+        {
+          "id": 1,
+          "name": "Me escondo em uma loja abandonada e observo de onde vem o som.",
+          "alias": "B"
+        },
+        {
+          "id": 2,
+          "name": "Corro o mais rápido possível para longe do local.",
+          "alias": "C"
+        },
+        {
+          "id": 3,
+          "name": "Me preparo para atacar, usando qualquer coisa como arma.",
+          "alias": "A"
+        }
       ]
     },
     {
       "id": 2,
-      "question": "Quem você salvaria primeiro ?",
+      "question": "Você encontra um sobrevivente desconhecido que afirma ter comida suficiente para os dois, mas parece nervoso. Como você reage?",
       "options": [
-        { "id": 1, "name": "Crianças", "alias": "A" },
-        { "id": 2, "name": "Idosos", "alias": "A" },
-        { "id": 3, "name": "Não saberia escolher", "alias": "B" }
+        {
+          "id": 1,
+          "name": "Aceito a oferta, mas fico de olho nele o tempo todo.",
+          "alias": "B"
+        },
+        {
+          "id": 2,
+          "name": "Recuso e sigo sozinho, é melhor não confiar em estranhos.",
+          "alias": "C"
+        },
+        {
+          "id": 3,
+          "name": "Aceito de imediato e sugiro que formemos uma equipe.",
+          "alias": "A"
+        }
       ]
     },
     {
       "id": 3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+      "question": "Você está em um grupo com outros sobreviventes e um deles está gravemente ferido. Ele pode não sobreviver. Qual é sua posição?",
       "options": [
-        { "id": 1, "name": "Não destruir prédios", "alias": "B" },
-        { "id": 2, "name": "Socar a cara do inimigo", "alias": "A" },
-        { "id": 3, "name": "Não sujar meu traje", "alias": "A" },
-        { "id": 4, "name": "Não deixar ninguém se ferir", "alias": "B" }
+        {
+          "id": 1,
+          "name": "Ajudar a pessoa ferida, mesmo que isso reduza as chances do grupo.",
+          "alias": "B"
+        },
+        {
+          "id": 2,
+          "name": "Deixar a pessoa para trás, priorizando a segurança do grupo.",
+          "alias": "C"
+        },
+        {
+          "id": 3,
+          "name": "Sugerir uma solução prática: deixar a pessoa descansar enquanto o grupo continua.",
+          "alias": "A"
+        }
       ]
     },
     {
       "id": 4,
-      "question": "Qual o seu maior foco ?",
+      "question": "Você encontra um supermercado parcialmente saqueado com comida suficiente para algumas semanas. No entanto, há rastros de que outros sobreviventes podem voltar a qualquer momento. O que você faz?",
       "options": [
-        { "id": 1, "name": "Ficar rico com poderes", "alias": "A" },
-        { "id": 2, "name": "Salvar a cidade", "alias": "B" }
+        {
+          "id": 1,
+          "name": "Pego o máximo de comida que consigo carregar e saio antes que alguém apareça.",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "Levo apenas o essencial e deixo o resto para os outros.",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "Fico por perto, escondido, para tentar negociar com os outros sobreviventes quando voltarem.",
+          "alias": "C"
+        }
       ]
     },
     {
       "id": 5,
-      "question": "Qual o seu apelido de super ser ?",
+      "question": "Uma horda de zumbis está se aproximando do abrigo onde você e seus companheiros estão escondidos. Vocês têm poucas armas e munição limitada. Qual é o seu plano?",
       "options": [
-        { "id": 1, "name": "O Terrivel", "alias": "A" },
-        { "id": 2, "name": "Amigo da vizinhança", "alias": "B" }
+        {
+          "id": 1,
+          "name": "Armar uma armadilha com materiais disponíveis para tentar eliminar a maioria dos zumbis.",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "Usar o pouco de munição que resta para atrair os zumbis para longe do abrigo, enquanto o grupo escapa pela saída dos fundos.",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "Lutar até o fim, sem recuar, usando qualquer arma à disposição.",
+          "alias": "C"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Durante uma patrulha, você vê uma criança zumbi vagando sozinha. Parece que ela não oferece muito perigo. Como você lida com isso?",
+      "options": [
+        {
+          "id": 1,
+          "name": "Deixo a criança zumbi em paz, mas continuo alerta.",
+          "alias": "B"
+        },
+        {
+          "id": 2,
+          "name": "Elimino a criança zumbi rapidamente para evitar riscos futuros.",
+          "alias": "A"
+        },
+        {
+          "id": 3,
+          "name": "Volto e aviso o grupo sobre o zumbi, sem me envolver diretamente.",
+          "alias": "C"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Você descobre um rádio que ainda funciona e capta uma transmissão de um suposto refúgio seguro. No entanto, o refúgio está a dias de distância, e a viagem seria arriscada. Qual a sua escolha?",
+      "options": [
+        {
+          "id": 1,
+          "name": "Arrisco a viagem com a esperança de chegar ao refúgio.",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "Decido ficar onde estou, o abrigo atual é mais seguro.",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "Tento convencer outros sobreviventes a buscar mais informações antes de tomar uma decisão.",
+          "alias": "C"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Você encontra uma loja de armas trancada, com visíveis marcas de tentativa de invasão. Parece que não foi saqueada, mas não há como saber se alguém está lá dentro. O que você faz?",
+      "options": [
+        { "id": 1, "name": "Tento invadir e pegar as armas.", "alias": "A" },
+        {
+          "id": 2,
+          "name": "Espio pelas janelas e observo por um tempo antes de decidir o que fazer.",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "Desisto e procuro outro lugar mais seguro para explorar.",
+          "alias": "C"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Um de seus melhores amigos revela que foi mordido por um zumbi, mas a ferida é recente. Ele ainda não se transformou. Qual é a sua reação?",
+      "options": [
+        {
+          "id": 1,
+          "name": "Elimino meu amigo antes que ele se torne um zumbi.",
+          "alias": "C"
+        },
+        {
+          "id": 2,
+          "name": "Espero para ver se há algum milagre ou tratamento possível.",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "Prendo-o em um lugar seguro, mas não o mato. Talvez haja uma solução.",
+          "alias": "A"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Você encontra um grupo de zumbis perto de uma casa onde sabe que há comida e medicamentos. A chance de sair vivo é pequena, mas você precisa dos suprimentos. O que você faz?",
+      "options": [
+        {
+          "id": 1,
+          "name": "Ataco os zumbis para pegar os suprimentos, mesmo correndo alto risco.",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "Tento atrair os zumbis para longe e pegar os suprimentos discretamente.",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "Desisto e procuro outro lugar com menos perigo.",
+          "alias": "C"
+        }
       ]
     }
   ],
   "results": {
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+    "A": "Você tem uma chance alta de sobreviver! Sua atitude determinada e, por vezes, arriscada, faz de você uma pessoa proativa no apocalipse. Você não hesita em tomar decisões difíceis, o que aumenta suas chances de sucesso — mas cuidado para não exagerar na autoconfiança.",
+    "B": "Você sobrevive pela prudência! Você é cauteloso, pensa antes de agir e prioriza a segurança. Isso te dá uma chance razoável de sobreviver. No entanto, em alguns momentos, essa prudência pode te impedir de avançar em situações críticas.",
+    "C": "Sua sobrevivência está em risco! Suas escolhas indicam que você tende a agir de forma impulsiva ou indecisa em momentos críticos. Essa abordagem pode colocar sua vida em risco, especialmente em um mundo tão perigoso como o do apocalipse zumbi. Tente focar mais em estratégias antes de agir."
   }
 }
